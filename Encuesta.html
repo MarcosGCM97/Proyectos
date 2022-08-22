@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>Formulario-de-Encuesta</title>
+        <style>
+            html{
+                background-color: olive;
+                background-image: url("fondo.jpg");
+                background-repeat: repeat;
+                background-size: 300px;
+                background-attachment: fixed;
+                
+            }
+            body{
+                text-align: center;
+                font-family: 'Alegreya SC', serif;
+            }
+        
+            h1, p{
+                color:rgb(67, 94, 31);
+                background-color: rgb(221, 224, 13);
+                display: inline;
+                margin-bottom: 100px;
+                border-radius: 20%;
+            }
+            
+            form{
+                background-color: rgb(221, 224, 13);
+                width: 60%;
+                height: auto;
+                margin-left: 18%;
+                margin-right: 20%;
+                text-align: justify;
+                padding: 25px 20px 25px 20px;
+                border-radius: 10%;
+                border: 5px solid yellow
+            }
+            input{
+                border-radius: 10px;
+                border: 3px dotted rgb(67, 94, 31);
+                margin: 10px 5px;
+            }
+            select{
+                border-radius: 10px;
+                border: 3px dotted rgb(67, 94, 31);
+                margin: 10px 5px;
+            }
+            textarea{
+                border-radius: 20px;
+                border: 3px dotted rgb(67, 94, 31);
+                height: 100px;
+                width: 90%;
+                margin: 20px 5px;
+            }
+            #submit{
+                background-color: rgb(67, 94, 31);
+                height: 40px;
+                width: 90%;
+                margin-left: 20px;
+            }
+          
+        </style>
+    </head>
+    <body>
+               
+        <div class="recorte">
+            <h1 title="Encuesta">Formulario de subcripcion de LoboGram</h1><br><br>
+            <p id="Description">Gracias por inscribirte a la mejor red social del momento</p>
+        </div>
+        <form id="survey-form">            
+            <label id="name-label"><b>Nombre</b></label><br>
+            <input type="text" id="name" placeholder="Nombre" required><br>
+            <label id="email-label"><b>Email</b></label><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <label id="number-label"><b>Edad (opcional)</b></label><br>
+            <input type="number" min="18" max="80" id="number" placeholder="Edad"><br>
+            <label><b>Que opcion describe mejor tu situacion?</b>
+            </label><br>
+            <select id="dropdown"><br>
+                <option>--</option>
+                <option value="Soltero">Soltero</option>
+                <option value="Casado">Casado</option>
+                <option value="Divorciado">Divorciado</option>
+                <option value="Es Complicado">Es Complicado</option>
+                <option value="No sabe no responde">No sabe no responde</option>
+            </select>
+            
+            <div>
+                <label><b>Recomendarias LoboGram a un amigo?</b></label><br>
+                <input type="radio" name="LoboGram" value="Definitivamente">Definitivamente<br>
+                <input type="radio" name="LoboGram" value="Capaz">Capaz<br>
+                <input type="radio" name="LoboGram" value="No estoy seguro">No estoy seguro<br>
+            </div>
+            <label><b>Que es lo que mas te gusta hacer en LoboGram?</b>
+            </label><br>
+            <select id="LoboGram">
+                <option>--</option>
+                <option value="Mensajear">Mensajear</option>
+                <option value="Comentar">Comentar</option>
+                <option value="Dar me gustas">Dar me gustas</option>
+                <option value="Heitear">Heitear</option>
+                <option value="No sabe no responde">No sabe no responde</option>
+            </select><br>
+            <label><b>Que mas te gustaria que tenga LoboGram</b></label><br>
+            <input type="checkbox" value="Mas Juegos">Mas Juegos<br>
+            <input type="checkbox" value="Mas opciones de chat">Mas opciones de chat<br>
+            <input type="checkbox" value="Misiones">Misiones<br>
+            <input type="checkbox" value="App de citas">App de citas<br>
+            <input type="checkbox" value="Premios">Premios<br>
+            <input type="checkbox" value="Porro">Porro<br>
+            <label><b>Agregue Comentarios</b></label><br>
+            <textarea>Ingrese su comentario</textarea><br>
+            <input type="submit" id="submit"><br>
+             
+        </form>
+    </body>
+</html>

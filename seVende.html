@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Se-Vende</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBvlwccEv9yRED0dmnYZVrJSoH1i8NV50iw&usqp=CAU);
+        }
+        header{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBvlwccEv9yRED0dmnYZVrJSoH1i8NV50iw&usqp=CAU);
+            position: fixed;
+            flex-direction: row-reverse;
+            width: 90%;
+            margin-left: 5%;
+        }
+        .elNav{
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+        }
+        h3{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        h1{
+            text-align: center;
+            padding-top: 100px
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            background-color: beige;
+            align-items: center;
+        }
+        img{
+            display: flex;
+            width: 100px;
+            height: auto;
+            position: static;  
+        }
+        div p{
+            border: solid 2px black;
+            height: 230px;
+            width: 320px;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        a{
+            padding-left: 30px;
+        }
+        .elCuadro{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            align-items: center;
+        }        
+        article{
+            display: flex;
+            flex-direction: auto;
+            justify-content: center;
+        }
+        .elFondo{
+            background-color: grey;
+            display: block;
+            height: 30px;
+            padding-top: 5px;
+        }
+        footer{
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: beige;
+            padding-bottom: 0;
+        }
+        .elFooter{
+            display: flex;
+            flex-direction:inherit;
+            justify-content: end;
+            padding-right: 60px;
+        }
+        .footerP{
+            display: flex;
+            padding-right: 60px;
+            justify-content: end;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <h3>Impre soras</h3>
+            <img id="header-img" src="data:image/png;base64,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">
+            <ul class="elNav">
+                
+                <a class="nav-link" href="#Descripcion">Descripcion </a>
+                <a class="nav-link" href="#video">Como Trabajamos</a>
+                <a class="nav-link" href="#Precios">Precios</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1><em>ImprecionaT</em>, siempre realizando <br><em>Obras Maestras</em></h1> 
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" required placeholder="Ingrese su Email"> <br> <br>
+        <input type="submit" id="submit" value="Mandale mecha">
+    </form>
+    <figure>
+        <img src="logoRayo.png" alt="LogoRayo" id="Descripcion">
+        <p class="elParrafo"><b>LA MEJOR RESOLUCION</b> <br> Velocidad asegurada en la creacion de tus proyectos, alta definicion y calidad.</p>
+        <img src="logoCamion.png" alt="LogoCamion">
+        <p class="elParrafo"><b>RAPIDA ENTREGA</b> <br>Rapida entrega del equipo a traves de nuestra propia mensajeria.</p>
+        <img src="imprLogo.png" alt="ImprLogo">
+        <p class="elParrafo"><b>EL MEJOR PRODUCTO</b> <br>Mejor producto en el mercado y a su dispocision.</p> <br><br>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/C4HAJ5HLuB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </figure> 
+    <article>
+        <div id="Precios" class="elCuadro"><p><b class="elFondo">Impresora Creality Ender 2 Pro Dytkit FDM</b> <br> <br> $ 47.499 <br> <br> La nueva impresora 3D de Creality, Ender 2 Pro es ideal para principiantes gracias a su diseño que facilita la usabilidad. <br> <br><input type="button" value="Seleccionar"></p></div>
+        <div class="elCuadro"><p><b class="elFondo">Impresora Hellbot Magna SE 32 BIT FDM </b><br> <br> $ 65.900 <br> <br> SE parte de la EVOLUCIÓN con Magna SE. Con Magna SE vas a experimentar lo simple qué es imprimir en 3D. <br> <br><input type="button" value="Seleccionar"></p></div>
+        <div class="elCuadro"><p><b class="elFondo">Impresora Creality Ender 3 Dytkit FDM </b><br> <br> $ 53.999 <br> <br> Gracias a su facilidad de uso y a su versatilidad en cuanto a tipos de filamento, la impresora 3D Creality Ender 3 es una de las más destacadas del mercado. <br> <br><input type="button" value="Seleccionar"></p></div>    
+    </article>
+    <footer>
+        <ul class="elFooter">
+            <a href="">Privacidad</a>
+            <a href="">Temas</a>
+            <a href="">Contacto</a>
+        </ul>
+        <p class="footerP">Copyright, ImprecionaT</p>
+    </footer>
+</body>
+</html>
